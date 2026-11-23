@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     database_url: str = f"sqlite:///{BASE_DIR / 'formpilot.db'}"
     upload_dir: Path = BASE_DIR / "uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
+    debug_routes: bool = True
 
     @property
     def allowed_host_list(self) -> list[str]:
