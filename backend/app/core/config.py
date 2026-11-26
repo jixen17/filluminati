@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=BASE_DIR / ".env", extra="ignore")
 
     groq_api_key: str = ""
-    llm_model: str = ""
+    llm_provider: str = "groq"
     frontend_url: str = "http://localhost:5173"
     allowed_hosts: str = "localhost,127.0.0.1"
     database_url: str = f"sqlite:///{BASE_DIR / 'formpilot.db'}"
