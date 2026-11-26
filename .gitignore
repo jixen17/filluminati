@@ -1,16 +1,8 @@
-# Python bytecode
-__pycache__/
-*.py[cod]
-
-# Virtual environments
-.venv/
-venv/
-
-# Local environment variables
-.env
-.env.*
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
 !.env.example
-
-# Local application data
-/backend/formpilot.db*
-/backend/uploads/
